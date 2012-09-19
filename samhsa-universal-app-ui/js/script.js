@@ -82,6 +82,6 @@ function UpdateTableHeaders() {
     })
 
 
-}());
+} ());
 
 
