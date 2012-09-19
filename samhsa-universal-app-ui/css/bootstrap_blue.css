@@ -2925,18 +2925,19 @@ background: linear-gradient(top, #7db9e8 0%,#106bb5 100%); /* W3C
   color: #999999;
 }
 .navbar .brand:hover {
-  text-decoration: none;
+	text-decoration: none;
+	vertical-align: middle;
 }
 .navbar .brand {
-  float: left;
-  display: block;
-  padding: 8px 20px 12px 40px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 57px;
-  height:57px;
-  color: #ffffff;
+	float: left;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 57px;
+	height:56px;
+	color: #ffffff;
  /* background:url(../img/samhsa-man.gif) left center no-repeat; */
 }
 .navbar .nav-collapse {
@@ -3060,11 +3061,11 @@ padding: 17px;
   bottom: 0;
 }
 .navbar .nav {
-  position: relative;
-  left: 0;
-  display: block;
-  float: left;
-  margin: 0 10px 0 0;
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -3074,27 +3075,27 @@ padding: 17px;
   float: left;
 }
 .navbar .nav > li > a {
-  float: none;
-  padding: 10px 10px 11px;
-  line-height: 19px;
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+	float: none;
+	padding: 5px 10px 5px;
+	line-height: 19px;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .navbar .nav > li > a:hover {
-  background-color: #1f8aaa;
-  text-decoration: none;
-  color:#000000;
-  text-shadow: none;
+	background-color: #1f8aaa;
+	text-decoration: none;
+	color:#FFFFFF;
+	text-shadow: none;
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #0E60A3;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #264e59;
 }
 .navbar .divider-vertical {
   height: 40px;
