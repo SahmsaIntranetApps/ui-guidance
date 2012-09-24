@@ -4119,7 +4119,7 @@ margin-left:14px;
 }
 .floatingHeader {
   position: fixed;
-  top: 77px;
+  top: 63px;
   visibility: hidden;
   z-index:9999;
   width:100%;
