@@ -763,6 +763,22 @@ textarea:focus {
   /* IE6-9 */
 
 }
+
+
+.uneditable input:focus,
+.uneditable textarea:focus {
+  border-color: rgba(255, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+}
+
+
+
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
@@ -2928,6 +2944,7 @@ background: linear-gradient(top, #7db9e8 0%,#106bb5 100%); /* W3C
 	text-decoration: none;
 	vertical-align: middle;
 }
+
 .navbar .brand {
 	float: left;
 	display: block;
@@ -2935,11 +2952,22 @@ background: linear-gradient(top, #7db9e8 0%,#106bb5 100%); /* W3C
 	margin-left: -20px;
 	font-size: 20px;
 	font-weight: 200;
-	line-height: 57px;
-	height:56px;
 	color: #ffffff;
- /* background:url(../img/samhsa-man.gif) left center no-repeat; */
+
 }
+.navbar .brand-small {
+
+	font-size: 10px;
+	font-weight: 200;
+	color: #ffffff;
+	}
+	
+	.navbar .brand-smaller {
+
+	font-size: 6px;
+	font-weight: 200;
+	color: #ffffff;
+	}
 .navbar .nav-collapse {
 padding: 17px;
 }
@@ -3041,6 +3069,7 @@ padding: 17px;
   left: 0;
   z-index: 1030;
   margin-bottom: 0;
+  background: #577786;
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-fixed-bottom .navbar-inner {
@@ -3191,6 +3220,7 @@ padding: 17px;
 }
 .navbar-inner{
 	position:relative;
+	margin-left:20px;
 }
 /*.navbar-inner .pull-right {
     position: absolute;
@@ -4250,7 +4280,9 @@ margin-left:20px;
 }
 }*/
 
+.required{color:#900; font-weight:bold;}
 
+.uneditable input{background-color:#ccc; color:#000;}
 
 .form-horizontal .control-group {
 	width:70%;

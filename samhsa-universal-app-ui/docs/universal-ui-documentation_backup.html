@@ -28,12 +28,12 @@ body {
 
 
 <div class="navbar navbar-fixed-top">
-  
+  <div class="navbar-inner">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="navbar-inner">
           <div class="navbar-inner">
-          
-            <div class="container-fluid" style="margin-top:5px;"><a class="brand" href="#"><img src="../img/samhsalogo_sm.png" width="205" height="56" style="float:left; margin-right:15px;" /></a><a class="brand" href="#" style="margin-left:0px; margin-top:10px;">Application Acronym<br/><span class="brand-small">Full Application Name</span></a>
-            
-            
+            <div class="container-fluid"> <a class="brand" href="#"><img src="../img/samhsalogo_sm.png" width="205" height="56" style="float:left; margin-right:15px;" />Application Acronym<br/><span class="brand-small">Full Application Name</span></a>
               <div class="nav-collapse pull-right">
                 <ul class="nav">
                   <li class="active"><a href="index.html">Home</a></li>
@@ -43,7 +43,10 @@ body {
                   <li><a href="#">Log Out</a></li>
                 </ul>
               </div>
-           
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -335,11 +338,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
       
       <code>&lt;fieldset class=&quot;one&quot; &gt;</code>
       <p>NOTE: This does not need to be a <code>&lt;fieldset&gt;</code>.This can be any block element wrapper.</p>  -->
-      
-      <p class="required">Fields marked with an * are required.</p>
       <fieldset class="one" >
         <div class="control-group">
-          <label for="xxx" class="control-label"><span class="required">*</span>Label</label>
+          <label for="xxx" class="control-label">Label</label>
           <div class="controls">
             <input id="xxx" type="text" />
           </div>
@@ -349,8 +350,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
       <fieldset class="two" >
         <div class="control-group">
           <label for="xxx" class="control-label">Label</label>
-          <div class="controls uneditable">
-            <input id="xxx" type="text" value="I am uneditable."/>
+          <div class="controls">
+            <input id="xxx" type="text" />
           </div>
         </div>
         <div class="control-group">
@@ -366,7 +367,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
           <label for="xxx" class="control-label">Label</label>
           <div class="controls">
             <input id="xxx" type="text" />
-            <input id="xxx3" type="text" />
           </div>
         </div>
         <div class="control-group">
@@ -404,7 +404,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
         </div>
         <div class="control-group">
           <label for="xxx" class="control-label">Label</label>
-          <div class="controls"></div>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
         </div>
       </fieldset>
       <!-- <code>&lt;fieldset class=&quot;five&quot; &gt;</code> -->
@@ -412,7 +414,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
         <div class="control-group">
           <label for="xxx" class="control-label">Label</label>
           <div class="controls">
-            <input id="xxx2" type="text" />
             <input id="xxx" type="text" />
           </div>
         </div>
@@ -445,7 +446,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa ne
         <div class="control-group">
           <label for="xxx" class="control-label">Date</label>
           <div class="controls">
-            <input id="xxx" type="text" class="date" />
+            <input id="xxx" type="text" value="text input class=&quot;date&quot;" class="date" />
           </div>
         </div>
       </fieldset>
