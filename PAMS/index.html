@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Performance Awards Managment System</title>
+    <link href="bootstrap/docs/assets/css/bootstrap_blue.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//www.google-analytics.com/ga.js"></script>
+    <script src="bootstrap/js/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+<div class="navbar navbar-fixed-top">
+  
+          <div class="navbar-inner">
+          
+            <div class="container-fluid" style="margin-top:5px;"><a class="brand" href="#"><img alt="" src="bootstrap/img/samhsalogo.png" width="205" height="56" style="float:left; margin-right:15px;" /></a><a class="brand" href="#" style="margin-left:0px; margin-top:10px;">Application Acronym<br/><span class="brand-small">Full Application Name</span></a>
+            
+            
+              <div class="nav-collapse pull-right">
+                <ul class="nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#contact">Help</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </div>
+           
+    </div>
+  </div>
+</div>
+<!--/end .navbar-->
+<div class="container-fluid main">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+    <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Active Nav</a></li>
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle"
+data-toggle="dropdown"
+href="#"> Drop Down <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Menu Item 1</a></li>
+              <li><a href="#">Menu Item 2</a></li>
+              <li><a href="#">Menu Item 3</a></li>
+              <li><a href="#">Menu Item 4</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Something Seperate</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu Item 4</a></li>
+          <li><a href="#">Menu Item 5</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Active Nav</a></li>
+          <li><a href="#">Menu Item 1</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle"
+data-toggle="dropdown"
+href="#"> Drop Down <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Menu Item 1</a></li>
+              <li><a href="#">Menu Item 2</a></li>
+              <li><a href="#">Menu Item 3</a></li>
+              <li><a href="#">Menu Item 4</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Something Seperate</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="tab3">
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Active Nav</a></li>
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+          <li><a href="#">Menu Item 4</a></li>
+          <li><a href="#">Menu Item 5</a></li>
+          <li><a href="#">Menu Item 6</a></li>
+          <li><a href="#">Menu Item 7</a></li>
+          <li><a href="#">Menu Item 8</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="breadcrumb">
+    <li> <a href="index.html">Home</a> <span class="divider">/</span> </li>
+    <li class="active">App Breadcrumbs</li>
+  </ul>
+  <hr style="margin-bottom:30px;" />
+ 
+ <!-- <h2>Universal UI Framework</h2>
+  <p>Universal UI front-end code is based on a popular html/css/js framework for rapid development of the most common UI patterns</p>
+  <p><a href="http://twitter.github.com/bootstrap/index.html">Overview of Twitter Bootstrap</a></p> 
+  <p><a href="../home-page-template.html">Sample Homepage</a></p>
+  <p><a href="../data-list.html">Sample Data Table and Left Nav</a></p>
+  
+  <p><a class="btn btn-large btn-primary" href="universal-ui-boilerplate-001.zip">Download the boilerplate (zip - 133kb)</a></p>
+  <hr style="margin-bottom:30px;" />
+  <h2>Universal UI uses fluid CSS columns</h2>
+  <p><a href="http://twitter.github.com/bootstrap/scaffolding.html">Layout Documentation</a></p>
+  <p><code>&lt;div class="container-fluid"&gt;</code> gives flexible page structure, min- and max-widths, and a left-hand sidebar.</p>
+  <div class="mini-layout fluid">
+    <div class="mini-layout-sidebar"></div>
+    <div class="mini-layout-body"></div>
+  </div>
+  <pre class="prettyprint linenums">
+&lt;!--DIV STRUCTURE FOR A 2 COLUMN LAYOUT--&gt;  
+&lt;div class="row-fluid"&gt;
+  &lt;div class="span3"&gt;...&lt;/div&gt;
+  &lt;div class="span9"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+  <div class="row-fluid">
+    <div class="span3" style="background:#ddd;">
+      <p>Left Column <code>&lt;div class="span3"&gt;</code></p>
+    </div>
+    <div class="span9" style="background:#eee;">
+      <p>Right Column <code>&lt;div class="span9"&gt;</code></p>
+    </div>
+  </div>
+  <hr style="margin-bottom:30px;" /> -->
+  <h2>Buttons</h2>
+  <!--<p><a href="http://twitter.github.com/bootstrap/base-css.html#buttons">Buttons Documentation</a></p> -->
+  <a class="btn pull-right" href="">Button (Right)</a>
+  <p> <a class="btn" href="">Button</a></p>
+  <p> <a class="btn btn-small" href="">Small Button</a></p>
+  <p> <a class="btn btn-primary" href="">Button</a></p>
+  <p> <a class="btn btn-primary btn-small" href="">Small Button</a></p>
+  <hr style="margin-bottom:30px;" />
+
+
+ <h2>Dropdowns</h2>
+  
+
+        <div>
+            <ul class="nav nav-pills">
+   
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul> <!-- /tabs -->
+  </div>
+  
+  <hr style="margin-bottom:30px;" />
+
+
+  <h1>Tooltips</h1>
+  <p>Hover over the links below to see tooltips:</p>
+  <div class="bs-docs-example tooltip-demo">
+            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a id="default" href="#" rel="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a id="default2" href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a id="default3" href="#" rel="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a id="default4" href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            </p>
+          </div>
+
+    <hr style="margin-bottom:30px;">
+
+
+ <h2>Accordion</h2>
+  
+<div class="accordion" id="accordion2">
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+Collapsible Group Item #1
+</a>
+</div>
+<div id="collapseOne" class="accordion-body collapse in">
+<div class="accordion-inner">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa nec dui iaculis ultrices. Curabitur et tortor vitae nunc feugiat rhoncus vitae vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium, diam at faucibus molestie, ipsum nunc interdum est, a hendrerit lacus sapien sed sem. Sed gravida eleifend sem eget porttitor. Phasellus sed tempus velit. Mauris viverra sem eu leo venenatis vel eleifend felis imperdiet. Nullam leo diam, ornare sed consequat sit amet, fringilla sed lacus. 
+</div>
+</div>
+</div>
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+Collapsible Group Item #2
+</a>
+</div>
+<div id="collapseTwo" class="accordion-body collapse">
+<div class="accordion-inner">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa nec dui iaculis ultrices. Curabitur et tortor vitae nunc feugiat rhoncus vitae vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium, diam at faucibus molestie, ipsum nunc interdum est, a hendrerit lacus sapien sed sem. Sed gravida eleifend sem eget porttitor. Phasellus sed tempus velit. Mauris viverra sem eu leo venenatis vel eleifend felis imperdiet. Nullam leo diam, ornare sed consequat sit amet, fringilla sed lacus. 
+</div>
+</div>
+</div>
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+Collapsible Group Item #3
+</a>
+</div>
+<div id="collapseThree" class="accordion-body collapse">
+<div class="accordion-inner">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa nec dui iaculis ultrices. Curabitur et tortor vitae nunc feugiat rhoncus vitae vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium, diam at faucibus molestie, ipsum nunc interdum est, a hendrerit lacus sapien sed sem. Sed gravida eleifend sem eget porttitor. Phasellus sed tempus velit. Mauris viverra sem eu leo venenatis vel eleifend felis imperdiet. Nullam leo diam, ornare sed consequat sit amet, fringilla sed lacus. 
+</div>
+</div>
+</div>
+</div>
+  
+  <hr style="margin-bottom:30px;" />
+
+
+
+  <h2>Tables</h2>
+  <!-- <p><a href="http://twitter.github.com/bootstrap/base-css.html#tables">Tables Documentation</a></p> -->
+
+  <!--
+  <pre class="prettyprint">
+  &lt;!--TABLE WITH ZEBRA STRIPES AND A STICKY HEADER--&gt;
+  &lt;table class=&quot;table table-striped table-bordered persist-area&quot; style=&quot;width:100%&quot; &gt;
+    &lt;thead&gt;
+      &lt;tr style=&quot;width:100%&quot; class=&quot;persist-header&quot;&gt;
+        &lt;th&gt;...&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;....&lt;/tbody&gt;
+  &lt;/table&gt;</pre> -->
+  <table class="table table-striped table-bordered persist-area" style="width:100%" >
+    <thead>
+      <tr style="width:100%" class="persist-header">
+        <th><a href="#">Sticky Table Header <i class="icon-arrow-down"></i></a></th>
+        <th><a href="#">Table Header</a></th>
+        <th><a href="#">Table Header</a></th>
+        <th><a href="#">Table Header</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+      <tr>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+        <td>Table Cell</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr style="margin-bottom:30px;" />
+  <h2>Forms with stacked labels</h2>
+   <!-- <p><a href="http://twitter.github.com/bootstrap/base-css.html#forms">Forms Documentation</a></p>  -->
+  <div class="well">
+<!-- <p><code>&lt;div class=&quot;well&quot;&gt;</code> This form is inside of a well.</p>
+    <hr /> -->
+    <form class="form-vert-col">
+      
+     <!-- <legend><code>&lt;form class=&quot;form-vert-col&quot;&gt;</code><p>NOTE: This does not need to be a <code>&lt;form&gt;</code>.This can be any block element wrapper.</p></legend>
+      
+      <code>&lt;fieldset class=&quot;one&quot; &gt;</code>
+      <p>NOTE: This does not need to be a <code>&lt;fieldset&gt;</code>.This can be any block element wrapper.</p>  -->
+      
+      <p class="required">Fields marked with an * are required.</p>
+      <fieldset class="one" >
+        <div class="control-group">
+          <label for="xxx" class="control-label"><span class="required">*</span>Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" required/>
+          </div>
+        </div>
+      </fieldset>
+      <!-- <code>&lt;fieldset class=&quot;two&quot; &gt;</code> -->
+      <fieldset class="two" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" value="I am uneditable." disabled="disabled"/>
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+      <!-- <code>&lt;fieldset class=&quot;three&quot; &gt;</code> -->
+      <fieldset class="three" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+            <input id="xxx3" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+    <!--  <code>&lt;fieldset class=&quot;four&quot; &gt;</code> -->
+      <fieldset class="four" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls"></div>
+        </div>
+      </fieldset>
+      <!-- <code>&lt;fieldset class=&quot;five&quot; &gt;</code> -->
+      <fieldset class="five" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx2" type="text" />
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="five">
+        <div class="control-group">
+          <label for="xxx" class="control-label">Date</label>
+          <div class="controls">
+            <input id="xxx" type="text" class="date" />
+          </div>
+        </div>
+      </fieldset>
+      
+      <!-- <pre>
+      &lt;!--FORM HTML--&gt;
+      &lt;form class=&quot;form-vert-col&quot;&gt;
+      
+      &lt;fieldset class=&quot;two&quot;&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label for=&quot;xxx&quot; class=&quot;control-label&quot;&gt;Label 1&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; disabled=&quot;&quot; value=&quot;&quot; id=&quot;xxx&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label for=&quot;xxx&quot; class=&quot;control-label&quot;&gt;Label 2&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; disabled=&quot;&quot; value=&quot;&quot; id=&quot;xxx&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+       &lt;/fieldset&gt;
+       
+       &lt;!-- form actions --&gt;
+       &lt;div class=&quot;form-actions&quot;&gt;
+         &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+         &lt;button class=&quot;btn&quot;&gt;Cancel&lt;/button&gt;
+       &lt;/div&gt;
+      
+    &lt;/form&gt;</pre> -->
+      
+      
+      <fieldset class="five">
+        <label class="control-label" for="optionsRadios">Radio buttons</label>
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio">
+              <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">
+              Option 1 </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio">
+              <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">
+              Option 2 </label>
+          </div>
+        </div>
+      </fieldset>
+   <!--   <pre>
+      &lt;!--RADIO BUTTONS--&gt;
+      &lt;fieldset class=&quot;five&quot;&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;optionsRadios&quot;&gt;Radio buttons&lt;/label&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;label class=&quot;radio&quot;&gt;
+              &lt;input type=&quot;radio&quot; checked=&quot;&quot; value=&quot;option1&quot; id=&quot;optionsRadios1&quot; name=&quot;optionsRadios&quot;&gt;
+              Option 1 &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;label class=&quot;radio&quot;&gt;
+              &lt;input type=&quot;radio&quot; value=&quot;option2&quot; id=&quot;optionsRadios2&quot; name=&quot;optionsRadios&quot;&gt;
+              Option 2 &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;</pre> -->
+      <!-- form actions -->
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <hr style="margin-bottom:30px;" />
+  <h2>Forms with inline labels</h2>
+   
+  <div class="well">
+  <!--<p><code>&lt;div class=&quot;well&quot;&gt;</code> This form is inside of a well.</p>
+    <hr /> -->
+    <form class="form-horizontal">
+    <!--  <legend><code>&lt;form class=&quot;form-horizontal&quot;&gt;</code><p>NOTE: This does not need to be a <code>&lt;form&gt;</code>.This can be any block element wrapper.</p></legend> -->
+      
+     <!--  <code>&lt;fieldset class=&quot;one&quot; &gt;</code> -->
+     
+    
+      <fieldset class="one" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+      <!-- <code>&lt;fieldset class=&quot;two&quot; &gt;</code> -->
+      <fieldset class="two" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+     <!-- <code>&lt;fieldset class=&quot;three&quot; &gt;</code> -->
+      <fieldset class="three" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+    <!--  <code>&lt;fieldset class=&quot;four&quot; &gt;</code> -->
+      <fieldset class="four" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+     <!--  <code>&lt;fieldset class=&quot;five&quot; &gt;</code> -->
+      <fieldset class="five" >
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="xxx" class="control-label">Label</label>
+          <div class="controls">
+            <input id="xxx" type="text" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="five">
+        <div class="control-group">
+          <label for="xxx" class="control-label">Date</label>
+          <div class="controls">
+            <input id="xxx" type="text"  class="date" />
+          </div>
+        </div>
+      </fieldset>
+      
+    <!--  <pre>
+      &lt;!--FORM HTML--&gt;
+      &lt;form class=&quot;form-horizontal&quot;&gt;
+      
+      &lt;fieldset class=&quot;two&quot;&gt;
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label for=&quot;xxx&quot; class=&quot;control-label&quot;&gt;Label 1&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; disabled=&quot;&quot; value=&quot;&quot; id=&quot;xxx&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;control-group&quot;&gt;
+          &lt;label for=&quot;xxx&quot; class=&quot;control-label&quot;&gt;Label 2&lt;/label&gt;
+          &lt;div class=&quot;controls&quot;&gt;
+            &lt;input type=&quot;text&quot; disabled=&quot;&quot; value=&quot;&quot; id=&quot;xxx&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+       &lt;/fieldset&gt;
+       
+       &lt;!-- form actions --&gt;
+       &lt;div class=&quot;form-actions&quot;&gt;
+         &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+         &lt;button class=&quot;btn&quot;&gt;Cancel&lt;/button&gt;
+       &lt;/div&gt;
+      
+    &lt;/form&gt;</pre>  -->
+      <!-- form actions -->
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+    
+    
+  </div>
+</div>
+<!-- /container -->
+
+<div class="footer">
+  <ul class="breadcrumb">
+    <li> <a href="#">Privacy</a> <span class="divider">/</span> </li>
+    <li> <a href="#">Disclaimer</a> <span class="divider">/</span> </li>
+    <li> <a href="#">Accessibility</a> <span class="divider">/</span> </li>
+    <li> <a href="#">SAMHSA Intranet</a></li>
+  </ul>
+  <p class="pull-right">This application is sponsored and maintained by DTM at SAMHSA</p>
+</div>
+
+        <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-alert.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-button.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/bootstrap-affix.js"></script>
+    <script type="text/javascript" src="bootstrap/docs/assets/js/application.js"></script>
+</body>
+</html>
