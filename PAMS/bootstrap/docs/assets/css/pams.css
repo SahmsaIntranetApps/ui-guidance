@@ -1,6 +1,10 @@
 ﻿#defaultContainer{
     margin-top:70px;
 }
+#defaultContainer .row-fluid .span9 h1{
+    text-align:center;
+    margin-bottom: 20px;
+}
 #leftSidebar{
     height:500px;
     overflow:auto;
