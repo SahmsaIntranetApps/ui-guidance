@@ -1,0 +1,13 @@
+﻿#defaultContainer{
+    margin-top:70px;
+}
+#leftSidebar{
+    height:500px;
+    overflow:auto;
+}
+#leftSidebar .nav-list {
+    border-right:none;        
+}
+#leftSidebar .nav-list > li {
+    border-bottom:none;
+}
