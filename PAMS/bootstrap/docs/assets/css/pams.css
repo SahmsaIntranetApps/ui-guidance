@@ -21,3 +21,12 @@
 .selectLabelTop{
     margin-left:475px !important;
 }
+#noteRequired{
+    margin-left:20px !important;
+}
+.labelRight{
+    text-align:right;
+}
+.labelCenter{
+    text-align:center;
+}

@@ -90,12 +90,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="span9">
+            <div id="scenario" class="span9">
                 <h1>
                     Scenario Framwork</h1>
                 <div class="row-fluid">
                     <div class="control-group">
-                        <asp:Label ID="Label1" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList1">Add/Edit Scenario Framework</asp:Label>
+                        <asp:Label ID="Label1" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList1">
+                        Add/Edit Scenario Framework:
+                        </asp:Label>
                         <div class="controls">
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
                                 <asp:ListItem>-- Add New --</asp:ListItem>
@@ -111,10 +113,12 @@
                 <div class="row">
                 </div>
                 <div class="row-fluid span3 selectLabelTop">
-                    <asp:Label ID="Label2" runat="server" CssClass="span2" AssociatedControlID="DropDownList2">Rating Category</asp:Label>
+                    <asp:Label ID="Label2" runat="server" CssClass="span2" AssociatedControlID="DropDownList2">
+                    Rating Category
+                    </asp:Label>
                 </div>
                 <div class="row-fluid">
-                    <h4 class="span4">
+                    <h4 id="noteRequired" class="span4">
                         Note:* indicates a required field.</h4>
                     <div class="offset6">
                         <asp:DropDownList ID="DropDownList2" runat="server" CssClass="span1">
@@ -127,17 +131,124 @@
                         </asp:DropDownList>
                     </div>
                 </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1">
+                        *Scenario Framework Name:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox1" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label4" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList3">
+                        Performance Year:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:DropDownList ID="DropDownList3" runat="server" CssClass="span1">
+                                <asp:ListItem>2011</asp:ListItem>
+                                <asp:ListItem>2012</asp:ListItem>
+                                <asp:ListItem>2013</asp:ListItem>
+                                <asp:ListItem>2014</asp:ListItem>
+                                <asp:ListItem>2015</asp:ListItem>
+                                <asp:ListItem>2016</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label5" runat="server" CssClass="span3" AssociatedControlID="TextBox2">
+                        Projected Payout Dates:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox2" CssClass="span3" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label6" runat="server" CssClass="span3" AssociatedControlID="TextBox3">
+                        *Minimum Award Amount:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label7" runat="server" CssClass="span3" AssociatedControlID="TextBox4">
+                        *Minimum Cash Payout:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label8" runat="server" CssClass="span3" AssociatedControlID="TextBox5">
+                        *Minimum Time Off:
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label9" runat="server" CssClass="span3" AssociatedControlID="TextBox6">
+                        *BU Allocation
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label10" runat="server" CssClass="span3" AssociatedControlID="TextBox7">
+                        *Non BU Allocation
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label11" runat="server" CssClass="span3" AssociatedControlID="TextBox8">
+                        Total Allocation Amount
+                        </asp:Label>
+                        <div class="controls">
+                            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label12" runat="server" CssClass="span3" AssociatedControlID="TextBox9">
+                        Comments:
+                        </asp:Label>
+                        <asp:TextBox ID="TextBox9" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            <ul class="breadcrumb">
-                <li><a href="#">Privacy</a> <span class="divider">/</span> </li>
-                <li><a href="#">Disclaimer</a> <span class="divider">/</span> </li>
-                <li><a href="#">Accessibility</a> <span class="divider">/</span> </li>
-                <li><a href="#">SAMHSA Intranet</a></li>
-            </ul>
-            <p class="pull-right">
-                This application is sponsored and maintained by DTM at SAMHSA</p>
+        <div class="row-fluid">
+            <div class="footer">
+                <ul class="breadcrumb">
+                    <li><a href="#">Privacy</a> <span class="divider">/</span> </li>
+                    <li><a href="#">Disclaimer</a> <span class="divider">/</span> </li>
+                    <li><a href="#">Accessibility</a> <span class="divider">/</span> </li>
+                    <li><a href="#">SAMHSA Intranet</a></li>
+                </ul>
+                <p class="pull-right">
+                    This application is sponsored and maintained by DTM at SAMHSA</p>
+            </div>
         </div>
     </div>
     </form>
