@@ -15,3 +15,9 @@
 #leftSidebar .nav-list > li {
     border-bottom:none;
 }
+.selectLabel{
+    line-height:30px;   
+}
+.selectLabelTop{
+    margin-left:475px !important;
+}

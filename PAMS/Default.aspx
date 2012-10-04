@@ -10,6 +10,7 @@
     <script src="bootstrap/js/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
 </head>
 <body>
+    <form id="Form1" runat="server" class="form-horizontal">
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container-fluid" style="margin-top: 5px;">
@@ -92,21 +93,40 @@
             <div class="span9">
                 <h1>
                     Scenario Framwork</h1>
-                <form runat="server" class="form-horizontal">
-                <div class="control-group">
-                    <asp:Label runat="server" CssClass="span3" AssociatedControlID="DropDownList1">Add/Edit Scenario Framework</asp:Label>
-                    <div class="controls">            
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
-                        <asp:ListItem>-- Add New --</asp:ListItem>
-                        <asp:ListItem>Item</asp:ListItem>
-                        <asp:ListItem>Item</asp:ListItem>
-                        <asp:ListItem>Item</asp:ListItem>
-                        <asp:ListItem>Item</asp:ListItem>
-                        <asp:ListItem>Item</asp:ListItem>
-                    </asp:DropDownList>
+                <div class="row-fluid">
+                    <div class="control-group">
+                        <asp:Label ID="Label1" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList1">Add/Edit Scenario Framework</asp:Label>
+                        <div class="controls">
+                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
+                                <asp:ListItem>-- Add New --</asp:ListItem>
+                                <asp:ListItem>Item</asp:ListItem>
+                                <asp:ListItem>Item</asp:ListItem>
+                                <asp:ListItem>Item</asp:ListItem>
+                                <asp:ListItem>Item</asp:ListItem>
+                                <asp:ListItem>Item</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                 </div>
-                </form>
+                <div class="row">
+                </div>
+                <div class="row-fluid span3 selectLabelTop">
+                    <asp:Label ID="Label2" runat="server" CssClass="span2" AssociatedControlID="DropDownList2">Rating Category</asp:Label>
+                </div>
+                <div class="row-fluid">
+                    <h4 class="span4">
+                        Note:* indicates a required field.</h4>
+                    <div class="offset6">
+                        <asp:DropDownList ID="DropDownList2" runat="server" CssClass="span1">
+                            <asp:ListItem></asp:ListItem>
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                            <asp:ListItem>5</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -120,6 +140,7 @@
                 This application is sponsored and maintained by DTM at SAMHSA</p>
         </div>
     </div>
+    </form>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
