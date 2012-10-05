@@ -1,32 +1,38 @@
-﻿#defaultContainer{
-    margin-top:70px;
+﻿#defaultContainer {
+    margin-top: 70px;
 }
-#defaultContainer .row-fluid .span9 h1{
-    text-align:center;
+#defaultContainer .row-fluid .span9 h1 {
+    text-align: center;
     margin-bottom: 20px;
 }
-#leftSidebar{
-    height:500px;
-    overflow:auto;
+#leftSidebar {
+    height: 500px;
+    overflow: auto;
 }
 #leftSidebar .nav-list {
-    border-right:none;        
+    border-right: none;
 }
 #leftSidebar .nav-list > li {
-    border-bottom:none;
+    border-bottom: none;
 }
-.selectLabel{
-    line-height:30px;   
+.selectLabel {
+    line-height: 30px;
 }
-.selectLabelTop{
-    margin-left:475px !important;
+.selectLabelTop {
+    margin-left: 475px !important;
 }
-#noteRequired{
-    margin-left:20px !important;
+#noteRequired {
+    margin-left: 20px !important;
 }
-.labelRight{
-    text-align:right;
+label {
+    line-height: 30px;
 }
-.labelCenter{
-    text-align:center;
+.labelRight {
+    text-align: right;
+}
+.labelCenter {
+    text-align: center;
+}
+.form-horizontal .control-group {
+    margin-bottom: 0px;
 }

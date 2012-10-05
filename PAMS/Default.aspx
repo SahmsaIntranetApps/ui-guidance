@@ -129,17 +129,26 @@
                             <asp:ListItem>4</asp:ListItem>
                             <asp:ListItem>5</asp:ListItem>
                         </asp:DropDownList>
+                        <div class="row-fluid">
+                            <label class="span2">
+                                Floor</label>
+                            <label class="span2">
+                                Ceiling</label>
+                        </div>
                     </div>
                 </div>
                 <div class="row-fluid">
                     <div class="control-group">
-                        <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1">
+                        <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1" CssClass="span3">
                         *Scenario Framework Name:
                         </asp:Label>
                         <div class="controls">
                             <asp:TextBox ID="TextBox1" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
+                    <label class="span1 inline">1</label>
+                    <asp:TextBox ID="TextBox10" runat="server" CssClass="span1"></asp:TextBox>
+                    <asp:TextBox ID="TextBox11" runat="server" CssClass="span1"></asp:TextBox>
                 </div>
                 <div class="row-fluid">
                     <div class="control-group">
@@ -174,7 +183,7 @@
                         *Minimum Award Amount:
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox3" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -184,7 +193,7 @@
                         *Minimum Cash Payout:
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox4" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -194,7 +203,7 @@
                         *Minimum Time Off:
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox5" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -204,7 +213,7 @@
                         *BU Allocation
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox6" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -214,7 +223,7 @@
                         *Non BU Allocation
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox7" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -224,7 +233,7 @@
                         Total Allocation Amount
                         </asp:Label>
                         <div class="controls">
-                            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox8" runat="server" CssClass="span3"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -233,11 +242,13 @@
                         <asp:Label ID="Label12" runat="server" CssClass="span3" AssociatedControlID="TextBox9">
                         Comments:
                         </asp:Label>
-                        <asp:TextBox ID="TextBox9" runat="server" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="TextBox9" runat="server" TextMode="MultiLine" CssClass="span3"></asp:TextBox>
                     </div>
                 </div>
             </div>
         </div>
+        <br />
+        <br />
         <div class="row-fluid">
             <div class="footer">
                 <ul class="breadcrumb">
