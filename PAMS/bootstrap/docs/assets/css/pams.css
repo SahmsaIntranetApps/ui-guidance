@@ -1,7 +1,7 @@
 ﻿#defaultContainer {
     margin-top: 70px;
 }
-#defaultContainer .row-fluid .span9 h1 {
+.h1Center {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -15,24 +15,28 @@
 #leftSidebar .nav-list > li {
     border-bottom: none;
 }
-.selectLabel {
-    line-height: 30px;
-}
-.selectLabelTop {
-    margin-left: 475px !important;
+.margin-left25 {
+    margin-left: 25px !important;
 }
 #noteRequired {
-    margin-left: 20px !important;
+    margin-left: 32px !important;
 }
-label {
+.margin-top20{
+    margin-top:20px;
+}
+.labelBox {
     line-height: 30px;
+    margin-right: 5px;
 }
-.labelRight {
+.rightAlign {
     text-align: right;
 }
-.labelCenter {
+.centerAlign {
     text-align: center;
 }
 .form-horizontal .control-group {
     margin-bottom: 0px;
+}
+#DropDownList1{
+    margin-left:15px !important;   
 }

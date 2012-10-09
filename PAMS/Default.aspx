@@ -90,159 +90,51 @@
                     </li>
                 </ul>
             </div>
-            <div id="scenario" class="span9">
-                <h1>
-                    Scenario Framwork</h1>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label1" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList1">
+            <div class="span9">
+                <h1 class="h1Center">Scenario Framwork</h1>
+                <div class="row-fluid">                    
+                        <asp:Label ID="Label1" runat="server" CssClass="span3 rightAlign" AssociatedControlID="DropDownList1">
                         Add/Edit Scenario Framework:
                         </asp:Label>
-                        <div class="controls">
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
-                                <asp:ListItem>-- Add New --</asp:ListItem>
-                                <asp:ListItem>Item</asp:ListItem>
-                                <asp:ListItem>Item</asp:ListItem>
-                                <asp:ListItem>Item</asp:ListItem>
-                                <asp:ListItem>Item</asp:ListItem>
-                                <asp:ListItem>Item</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                </div>
-                <div class="row-fluid span3 selectLabelTop">
-                    <asp:Label ID="Label2" runat="server" CssClass="span2" AssociatedControlID="DropDownList2">
-                    Rating Category
-                    </asp:Label>
+                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
+                            <asp:ListItem>-- Add New --</asp:ListItem>
+                            <asp:ListItem>Item</asp:ListItem>
+                            <asp:ListItem>Item</asp:ListItem>
+                            <asp:ListItem>Item</asp:ListItem>
+                            <asp:ListItem>Item</asp:ListItem>
+                            <asp:ListItem>Item</asp:ListItem>
+                        </asp:DropDownList>                    
                 </div>
                 <div class="row-fluid">
-                    <h4 id="noteRequired" class="span4">
-                        Note:* indicates a required field.</h4>
-                    <div class="offset6">
-                        <asp:DropDownList ID="DropDownList2" runat="server" CssClass="span1">
-                            <asp:ListItem></asp:ListItem>
-                            <asp:ListItem>1</asp:ListItem>
-                            <asp:ListItem>2</asp:ListItem>
-                            <asp:ListItem>3</asp:ListItem>
-                            <asp:ListItem>4</asp:ListItem>
-                            <asp:ListItem>5</asp:ListItem>
-                        </asp:DropDownList>
+                    <div class="span6">
+                        <div class="row-fluid margin-top20">
+                            <h4>Note:* indicates a required field.</h4>
+                        </div>
                         <div class="row-fluid">
-                            <label class="span2">
-                                Floor</label>
-                            <label class="span2">
-                                Ceiling</label>
+                            <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1" CssClass="span6">
+                                *Scenario Framework Name:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox1" runat="server" CssClass="span5"></asp:TextBox>
                         </div>
                     </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1" CssClass="span3">
-                        *Scenario Framework Name:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox1" runat="server" CssClass="span3"></asp:TextBox>
+                    <div class="span3">
+                        <div class="row-fluid">
+                            <asp:Label ID="Label2" runat="server" AssociatedControlID="DropDownList2">
+                    Rating Category
+                            </asp:Label>
                         </div>
-                    </div>
-                    <label class="span1 inline">1</label>
-                    <asp:TextBox ID="TextBox10" runat="server" CssClass="span1"></asp:TextBox>
-                    <asp:TextBox ID="TextBox11" runat="server" CssClass="span1"></asp:TextBox>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label4" runat="server" CssClass="span3 selectLabel" AssociatedControlID="DropDownList3">
-                        Performance Year:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:DropDownList ID="DropDownList3" runat="server" CssClass="span1">
-                                <asp:ListItem>2011</asp:ListItem>
-                                <asp:ListItem>2012</asp:ListItem>
-                                <asp:ListItem>2013</asp:ListItem>
-                                <asp:ListItem>2014</asp:ListItem>
-                                <asp:ListItem>2015</asp:ListItem>
-                                <asp:ListItem>2016</asp:ListItem>
+                        <div class="row-fluid">
+                            <asp:DropDownList ID="DropDownList2" runat="server" CssClass="span3 margin-left25">
+                                <asp:ListItem></asp:ListItem>
+                                <asp:ListItem>1</asp:ListItem>
+                                <asp:ListItem>2</asp:ListItem>
+                                <asp:ListItem>3</asp:ListItem>
+                                <asp:ListItem>4</asp:ListItem>
+                                <asp:ListItem>5</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                     </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label5" runat="server" CssClass="span3" AssociatedControlID="TextBox2">
-                        Projected Payout Dates:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox2" CssClass="span3" runat="server"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label6" runat="server" CssClass="span3" AssociatedControlID="TextBox3">
-                        *Minimum Award Amount:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox3" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label7" runat="server" CssClass="span3" AssociatedControlID="TextBox4">
-                        *Minimum Cash Payout:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox4" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label8" runat="server" CssClass="span3" AssociatedControlID="TextBox5">
-                        *Minimum Time Off:
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox5" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label9" runat="server" CssClass="span3" AssociatedControlID="TextBox6">
-                        *BU Allocation
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox6" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label10" runat="server" CssClass="span3" AssociatedControlID="TextBox7">
-                        *Non BU Allocation
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox7" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label11" runat="server" CssClass="span3" AssociatedControlID="TextBox8">
-                        Total Allocation Amount
-                        </asp:Label>
-                        <div class="controls">
-                            <asp:TextBox ID="TextBox8" runat="server" CssClass="span3"></asp:TextBox>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="control-group">
-                        <asp:Label ID="Label12" runat="server" CssClass="span3" AssociatedControlID="TextBox9">
-                        Comments:
-                        </asp:Label>
-                        <asp:TextBox ID="TextBox9" runat="server" TextMode="MultiLine" CssClass="span3"></asp:TextBox>
+                    <div class="span2">
                     </div>
                 </div>
             </div>
