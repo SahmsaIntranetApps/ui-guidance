@@ -18,11 +18,14 @@
 .margin-left25 {
     margin-left: 25px !important;
 }
-#noteRequired {
-    margin-left: 32px !important;
+.margin-left20 {
+    margin-left: 20px !important;
 }
 .margin-top20{
     margin-top:20px;
+}
+.margin-left35{
+    margin-left:35px !important;
 }
 .labelBox {
     line-height: 30px;
@@ -30,13 +33,34 @@
 }
 .rightAlign {
     text-align: right;
+    margin-top: 5px;
+}
+.textBoxRightAlign{
+    text-align:right;
 }
 .centerAlign {
     text-align: center;
 }
+.row-fluid{
+    margin-bottom:10px;
+}
 .form-horizontal .control-group {
     margin-bottom: 0px;
 }
+#noteRequired {
+    margin-left: 32px !important;
+}
 #DropDownList1{
     margin-left:15px !important;   
+}
+#ratingLink{
+    color:Blue;
+    text-decoration:underline;
+}
+#ratingCategory{
+   margin-top:150px !important;
+}
+#Button1{
+    width: 65px;
+    margin-left: 60px;
 }

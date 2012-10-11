@@ -92,18 +92,18 @@
             </div>
             <div class="span9">
                 <h1 class="h1Center">Scenario Framwork</h1>
-                <div class="row-fluid">                    
-                        <asp:Label ID="Label1" runat="server" CssClass="span3 rightAlign" AssociatedControlID="DropDownList1">
+                <div class="row-fluid">
+                    <asp:Label ID="Label1" runat="server" CssClass="span3 rightAlign" AssociatedControlID="DropDownList1">
                         Add/Edit Scenario Framework:
-                        </asp:Label>
-                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
-                            <asp:ListItem>-- Add New --</asp:ListItem>
-                            <asp:ListItem>Item</asp:ListItem>
-                            <asp:ListItem>Item</asp:ListItem>
-                            <asp:ListItem>Item</asp:ListItem>
-                            <asp:ListItem>Item</asp:ListItem>
-                            <asp:ListItem>Item</asp:ListItem>
-                        </asp:DropDownList>                    
+                    </asp:Label>
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="span4">
+                        <asp:ListItem>-- Add New --</asp:ListItem>
+                        <asp:ListItem>Item</asp:ListItem>
+                        <asp:ListItem>Item</asp:ListItem>
+                        <asp:ListItem>Item</asp:ListItem>
+                        <asp:ListItem>Item</asp:ListItem>
+                        <asp:ListItem>Item</asp:ListItem>
+                    </asp:DropDownList>
                 </div>
                 <div class="row-fluid">
                     <div class="span6">
@@ -111,10 +111,78 @@
                             <h4>Note:* indicates a required field.</h4>
                         </div>
                         <div class="row-fluid">
-                            <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1" CssClass="span6">
+                            <asp:Label ID="Label3" runat="server" AssociatedControlID="TextBox1" CssClass="span6 rightAlign">
                                 *Scenario Framework Name:
                             </asp:Label>
                             <asp:TextBox ID="TextBox1" runat="server" CssClass="span5"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label4" runat="server" CssClass="span6 rightAlign" AssociatedControlID="DropDownList3">
+                        *Performance Year:
+                            </asp:Label>
+                            <asp:DropDownList ID="DropDownList3" runat="server" CssClass="span2">
+                                <asp:ListItem>2011</asp:ListItem>
+                                <asp:ListItem>2012</asp:ListItem>
+                                <asp:ListItem>2013</asp:ListItem>
+                                <asp:ListItem>2014</asp:ListItem>
+                                <asp:ListItem>2015</asp:ListItem>
+                                <asp:ListItem>2016</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label5" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox2">
+                        *Projected Payout Dates:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox2" CssClass="span3" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label6" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox3">
+                        *Minimum Award Amount:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox3" runat="server" CssClass="span4 textBoxRightAlign" Text="500"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label7" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox4">
+                        *Minimum Cash Payout:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox4" runat="server" CssClass="span4 textBoxRightAlign" Text="100"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label8" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox5">
+                        *Minimum Time Off:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox5" runat="server" CssClass="span4 textBoxRightAlign" Text="20"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label9" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox6">
+                        *BU Allocation
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox6" runat="server" CssClass="span4"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label10" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox7">
+                        *Non BU Allocation
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox7" runat="server" CssClass="span4"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label11" runat="server" CssClass="span6 rightAlign" AssociatedControlID="TextBox8">
+                        Total Allocation Amount
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox8" runat="server" CssClass="span4"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <asp:Label ID="Label12" runat="server" CssClass="span6 centerAlign" AssociatedControlID="TextBox9">
+                        Comments:
+                            </asp:Label>
+                            <asp:TextBox ID="TextBox9" runat="server" TextMode="MultiLine" CssClass="span5"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid offset2">
+                            <div class="span9">
+                                <asp:Button ID="Button1" runat="server" Text="Save" />
+                                <asp:Button ID="Button2" runat="server" Text="Reset" />
+                                <asp:Button ID="Button3" runat="server" Text="Print" />
+                            </div>
                         </div>
                     </div>
                     <div class="span3">
@@ -133,26 +201,107 @@
                                 <asp:ListItem>5</asp:ListItem>
                             </asp:DropDownList>
                         </div>
+                        <div class="row-fluid centerAlign">                        
+                            <label class="span3 margin-left20">Floor</label>
+                            <label class="span3 margin-left35">Ceiling</label>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">1.</label>
+                            <asp:TextBox ID="TextBox10" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox11" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">2.</label>
+                            <asp:TextBox ID="TextBox12" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox13" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">3.</label>
+                            <asp:TextBox ID="TextBox14" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox15" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">4.</label>
+                            <asp:TextBox ID="TextBox16" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox17" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">5.</label>
+                            <asp:TextBox ID="TextBox18" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox19" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">6.</label>
+                            <asp:TextBox ID="TextBox20" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox21" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">7.</label>
+                            <asp:TextBox ID="TextBox22" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox23" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">8.</label>
+                            <asp:TextBox ID="TextBox24" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox25" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">9.</label>
+                            <asp:TextBox ID="TextBox26" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox27" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                       <div class="row-fluid">
+                            <label class="span1 rightAlign">10.</label>
+                            <asp:TextBox ID="TextBox28" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox29" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">11.</label>
+                            <asp:TextBox ID="TextBox30" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox31" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
+                        <div class="row-fluid">
+                            <label class="span1 rightAlign">12.</label>
+                            <asp:TextBox ID="TextBox32" runat="server" CssClass="span3"></asp:TextBox>
+                            <asp:TextBox ID="TextBox33" runat="server" CssClass="span3"></asp:TextBox>
+                        </div>
                     </div>
                     <div class="span2">
+                        <h4 id="ratingCategory">Rating Category Groups are:</h4>
+                        <div class="row-fluid">
+                            <span>E = 4.4 - 5.0</span>
+                        </div>
+                        <div class="row-fluid">
+                            <span>FS = 3.0 - 4.3</span>
+                        </div>
+                        <div class="row-fluid">
+                            <span>MS = 2.0 - 2.9</span>
+                        </div>
+                        <div class="row-fluid">
+                            <span>U = 1.0 - 1.9</span>
+                        </div>
+                        <div class="row-fluid">
+                            <a id="ratingLink" href="#">View Rating Distribution Report (Static)</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br />
-        <br />
-        <div class="row-fluid">
-            <div class="footer">
-                <ul class="breadcrumb">
-                    <li><a href="#">Privacy</a> <span class="divider">/</span> </li>
-                    <li><a href="#">Disclaimer</a> <span class="divider">/</span> </li>
-                    <li><a href="#">Accessibility</a> <span class="divider">/</span> </li>
-                    <li><a href="#">SAMHSA Intranet</a></li>
-                </ul>
-                <p class="pull-right">
-                    This application is sponsored and maintained by DTM at SAMHSA</p>
-            </div>
+    </div>
+    <br />
+    <br />
+    <div class="row-fluid">
+        <div class="footer">
+            <ul class="breadcrumb">
+                <li><a href="#">Privacy</a> <span class="divider">/</span> </li>
+                <li><a href="#">Disclaimer</a> <span class="divider">/</span> </li>
+                <li><a href="#">Accessibility</a> <span class="divider">/</span> </li>
+                <li><a href="#">SAMHSA Intranet</a></li>
+            </ul>
+            <p class="pull-right">
+                This application is sponsored and maintained by DTM at SAMHSA</p>
         </div>
+    </div>
     </div>
     </form>
     <!-- Le javascript
